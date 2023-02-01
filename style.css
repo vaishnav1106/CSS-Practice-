@@ -37,15 +37,27 @@ body
 
 .content 
 {
-    padding:10px;
-    background-color: #ccc;
+    margin-left:7px;
+    margin-right:7px;
+    margin-bottom:7px;
+    padding:10px ;
+    background-color: rgb(204, 199, 199);
     clear: both; /*The clear property specifies what should happen with the element that is next to a floating element.*/
-    margin-top: 50px; /* this will not work, cause clear will not give the full function
+    margin-top: 50px;
+     /* this will not work, cause clear will not give the full function
      so we need another div tag in between the two elements
      and call the style and add property clear,
-      so that we can have full capacity yof clear */
+      so that we can have full capacity yof clear BUT we can do the came with pseudo class "after" for that */
 }
 
+.services::after
+{
+    content: "";
+    display: block;
+    clear: both;
+
+ 
+}
 
  /* .red
 {
