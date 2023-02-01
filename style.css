@@ -16,7 +16,22 @@ body
     display: block;
     clear: both;
 } 
- .red
+
+.service h2, .service p
+{
+    color:rgb(133, 133, 133);
+    margin: 10px 0;
+    text-align: center;
+}
+.service
+{
+    float: left;
+    background: #eee;
+    width: 29%;
+    margin: 1%;
+    padding: 1%;
+}
+ /* .red
 {
     background-color: rgb(255, 0, 0);
     text-align: center;
@@ -34,9 +49,9 @@ body
     text-align: center;
     align-items: center;
     float:right
-}
-.box
+} 
+ .box
 {
     height: 100px;
     width: 100px;
-}  
+}   */
