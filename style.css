@@ -27,10 +27,23 @@ body
 {
     float: left;
     background: #eee;
-    width: 29%;
+    width: 29.33%;
     margin: 1%;
     padding: 1%;
+    height: 140px;
 }
+
+/* clear float */
+
+.content 
+{
+    padding:10px;
+    background-color: #ccc;
+    clear: both; /*The clear property specifies what should happen with the element that is next to a floating element.*/
+
+}
+
+
  /* .red
 {
     background-color: rgb(255, 0, 0);
