@@ -1,0 +1,42 @@
+body
+{
+    background-color: rgb(138, 134, 134);
+}
+.wrapper
+{
+    background: #fff;
+    max-width: 960px;
+    margin: 0 auto;
+    padding:20px'
+}
+
+.wrapper::after
+{
+    content: "";
+    display: block;
+    clear: both;
+} 
+ .red
+{
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    float: left;
+}
+.blue
+{
+    background-color: blue;
+    text-align: center;
+    float: right;
+}
+.green
+{
+    background-color: rgb(89, 236, 30);
+    text-align: center;
+    align-items: center;
+    float:right
+}
+.box
+{
+    height: 100px;
+    width: 100px;
+}  
