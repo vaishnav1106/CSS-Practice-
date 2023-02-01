@@ -40,7 +40,10 @@ body
     padding:10px;
     background-color: #ccc;
     clear: both; /*The clear property specifies what should happen with the element that is next to a floating element.*/
-
+    margin-top: 50px; /* this will not work, cause clear will not give the full function
+     so we need another div tag in between the two elements
+     and call the style and add property clear,
+      so that we can have full capacity yof clear */
 }
 
 
