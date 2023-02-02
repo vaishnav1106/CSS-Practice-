@@ -31,7 +31,10 @@ body
     margin: 1%;
     padding: 1%;
     height: 140px;
+    position: relative;
 }
+
+
 
 /* clear float */
 
@@ -109,4 +112,68 @@ section ,aside
      -webkit-column-rule: 1px solid #ccc;
      column-rule: 1px solid #ccc;
      text-align: justify;
+}
+
+/* the position property */
+
+/* relative */
+
+.service:nth-child(1)
+{
+   top: 5px;
+}
+
+.service:nth-child(2)
+{
+   top: 15px;
+}
+
+.service:nth-child(3)
+{
+   top: 25px;
+}
+/* absolute */
+
+#banner
+{
+    max-height: 300px;
+    overflow: hidden;
+    margin:1%;
+    position: relative;
+    padding-top: 1%;
+}
+
+#banner h2
+{
+    position: absolute;
+    top: 55px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+/* fixed */
+nav
+{
+    background: #333;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+nav li
+{
+    list-style-type:  none;
+    margin:0 5px;
+    color: #fff;
+    float:right;
+    
+}
+nav ul:after
+{
+    content:"";
+    display: block;
+    clear: both;
 }
