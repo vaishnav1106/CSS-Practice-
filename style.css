@@ -51,6 +51,12 @@ body
       so that we can have full capacity yof clear BUT we can do the came with pseudo class "after" for that */
 }
 
+.services
+{
+    max-height: 150px;
+    overflow: hidden;
+}
+
 .services:after
 {
     content: "";
