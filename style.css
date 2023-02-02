@@ -10,7 +10,7 @@ body
     padding:20px'
 }
 
-.wrapper::after
+.wrapper:after
 {
     content: "";
     display: block;
@@ -37,26 +37,21 @@ body
 
 .content 
 {
-    margin-left:7px;
-    margin-right:7px;
-    margin-bottom:7px;
-    padding:10px ;
-    background-color: rgb(204, 199, 199);
+    padding:10px;
+    background-color: #ccc;
     clear: both; /*The clear property specifies what should happen with the element that is next to a floating element.*/
-    margin-top: 50px;
-     /* this will not work, cause clear will not give the full function
+    margin: 20px 1%; /* this will not work, cause clear will not give the full function
      so we need another div tag in between the two elements
      and call the style and add property clear,
       so that we can have full capacity yof clear BUT we can do the came with pseudo class "after" for that */
 }
 
-.services::after
+.services:after
 {
     content: "";
     display: block;
     clear: both;
-
- 
+    margin: 60px;
 }
 
  /* .red
@@ -83,3 +78,23 @@ body
     height: 100px;
     width: 100px;
 }   */
+
+/* floationg column style */
+section ,aside
+{
+    float: left;
+    /* the float will not change anything because its on it full width 
+    so we need to add seperate width for section and aside  */
+    width: 46%;
+    /* here we take 46% so that we can get some space for margin and padding */
+    padding: 1%;
+    margin: 1%;
+    background: #f2f2f2;
+}
+/*  cleanfloat */
+.columns
+{
+    display: block;
+    content: "";
+    clear: both;
+}
